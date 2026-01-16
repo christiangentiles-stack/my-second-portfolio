@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marci Metzger Homes</title>
+
+  <link rel="stylesheet" href="../css/index2a.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+<header id="main-header">
+  <img class="logo" src="../My Portfolio/image/marci.png" alt="Marci Metzger Homes Logo">
+</header>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-image" id="main-hero" style="background-image: url('../My Portfolio/image/sample-background1.jpg');"></div>
+  <p class="hero-text" id="hero-text">
+    Find your dream home in Green Desert, where nature, comfort, and style come together to create the perfect living experience
+  </p>
+</div>
+
+<!-- Sidebar open button -->
+<div class="open-btn" onclick="openSidebar()">☰</div>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <div class="close-btn" onclick="closeSidebar()">✕</div>
+  <a href="#">Home</a>
+  <a href="#">Listings</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+
+<!-- Gallery Section -->
+<div class="container">
+  <p class="gallery-text" id="gallery-text">Gallery</p>
+  
+  <div class="img-container">
+    <!-- Gallery One stays alone -->
+    <div>
+      <img class="img-one" src="../My Portfolio/image/gallery one.jpg" alt="Gallery One">
+    </div>
+
+    <!-- Stack Gallery Two and Four -->
+    <div class="stacked">
+      <img class="stacked-img" src="../My Portfolio/image/gallery two.jpg" alt="Gallery Two">
+      <img class="stacked-img" src="../My Portfolio/image/gallery four.jpg" alt="Gallery Four">
+    </div>
+
+    <div>
+      <div>
+        <img class="img-three" src="../My Portfolio/image/gallery five.jpg" alt="Gallery Five">
+      </div>
+
+      <button class="photos-button"> Show More Photos</button>
+    </div>
+  </div>
+
+  <div class="details-container">
+   <div class="details-box">
+    <p class="details-title">Why Marci Metzger Homes?</p>
+
+      <div class="details-img-wrapper">
+        <img src="../My Portfolio/image/details1.png" alt="Details1">
+        <p class="details-text">Experience a convenient and efficient way to explore properties, connect with agents, and secure your ideal home</p>
+      </div>
+
+      <div class="details-img-wrapper">
+        <img src="../My Portfolio/image/details2.png" alt="Details2">
+        <p class="details-text">Homes that reflect the way you live, built with comfort, function, and style in mind</p>
+      </div>
+
+      <div class="details-img-wrapper">
+        <img src="../My Portfolio/image/details3.png" alt="Details3">
+        <p class="details-text">Committed support you can rely on, ensuring you feel confident and informed throughout every step of your home-buying journey</p>
+      </div>
+
+      <div class="search-container">
+        <!-- Background Image -->
+        <img class="search-background" src="../My Portfolio/image/search-bar-background.jpg" alt="search-bar-background">
+
+        <!-- Title -->
+        <p class="search-title">FIND YOUR DREAM HOME</p>
+
+        <!-- Search Box / Inside Container -->
+        <div class="search-container-inside">
+          <h2 class="search-heading">Search Listings</h2>
+          <form class="search-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="location">Location</label>
+                <select id="location">
+                  <option value="">Select Location</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="type">Type</label>
+                <select id="type">
+                  <option value="">Select Type</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sort">Sort By</label>
+                <select id="sort">
+                  <option value="">Select Sort</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bedrooms">Bedrooms</label>
+                <select id="bedrooms">
+                  <option value="">Any Number</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="baths">Baths</label>
+                <select id="baths">
+                  <option value="">Any Number</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="min-price">Min Price</label>
+                <input type="number" id="min-price" placeholder="$">
+              </div>
+              <div class="form-group">
+                <label for="max-price">Max Price</label>
+                <input type="number" id="max-price" placeholder="$">
+              </div>
+            </div>
+
+            <button type="submit" class="search-btn">Search Now</button>
+          </form>
+        </div>
+
+        <div>
+          <img class="logo-img" src="../My Portfolio/image/logos.png" alt="logos">
+        </div>
+
+        <div>
+          <div class="sentence-wrap">
+            <p class="sentence">Personalize any home design to meet your family’s needs, with extra rooms, custom features, and carefully considered touches that ensure your living space is comfortable, functional, and uniquely yours</p>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+          <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <h2>Send Message</h2>
+              <form>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="contact-btn">SEND</button>
+              </form>
+              <p class="captcha-text">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <h2>Call or Visit</h2>
+              <a href="https://wa.me/your-number" class="whatsapp-btn">Message us on WhatsApp</a>
+              <p><strong>Marci Metzger - THE RIDGE REALTY GROUP</strong></p>
+              <p>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+              <p class="phone">(206) 919-6886</p>
+              <h3>Office Hours</h3>
+              <p>Open today: 08:00 am – 07:00 pm</p>
+              <p>Open daily: 08:00 am – 07:00 pm</p>
+              <p>Appointments outside office hours available upon request. Just call!</p>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="social-icons">
+              <a href="#" target="_blank"><img src="../My Portfolio/image/facebook logo.jpg" alt="facebook logo" class="social-logo"></a>
+              <a href="#" target="_blank"><img src="../My Portfolio/image/instagram logo.png" alt="instagram logo" class="social-logo"></a>
+              <a href="#" target="_blank"><img src="../My Portfolio/image/linkedin logo.jpg" alt="linkedIn logo" class="social-logo"></a>
+            </div>
+            <p class="footer-text">COPYRIGHT © 2023 MARCI METZGER HOMES - ALL RIGHTS RESERVED</p>
+            <p class="footer-powered">POWERED BY <strong>GoDaddy Airo</strong></p>
+          </div>
+        </footer>
+
+      </div>      
+    </div>
+  </div> 
+
+
+</div>
+
+<div></div>
+
+<script src="../js/index2a.js"> 
+
+</script>
+
+</body>
+</html>
